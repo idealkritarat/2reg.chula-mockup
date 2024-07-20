@@ -52,38 +52,105 @@
                 </div>
             </div>
         </nav>
-        <main class="grow flex flex-col min-h-screen relative">
-            <div class="w-full py-3 px-4 flex justify-between items-center">
-                <button class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4">ข้อกำหนด</button>
-                <button class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4">EN</button>
+        <main class="grow flex flex-col min-h-screen relative gap-2">
+            <div class="w-full py-3 px-4 flex items-center gap-2 flex-wrap justify-center">
+                <div class="border-2 border-[#eb9999] py-2 rounded-full px-4 flex gap-4 items-center">
+                    <span>เลขประจำตัวนิสิต</span>
+                    <span class="font-semibold">6XX XXXX XX</span>
+                </div>
+                <div class="border-2 border-[#eb9999] py-2 rounded-full px-4 flex gap-4 items-center">
+                    <span>ชื่อ - นามสกุล</span>
+                    <div class="font-semibold flex gap-3">
+                        <div>นายจอห์น โด</div>
+                        <div>Mr.John Doe</div>
+                    </div>
+                </div>
+                <div class="border-2 border-[#eb9999] py-2 rounded-full px-4 flex gap-4">
+                    <span>เลขที่นั่งสอบ</span>
+                    <span class="font-semibold">2XXXXXXX</span>
+                </div>
             </div>
             <div class="w-full h-full grow py-7 px-3">
                 <div class="flex flex-col items-center gap-10">
-                    <div class="flex flex-col items-center gap-5 text-center">
-                        <span class="font-extrabold text-3xl">เข้าสู่ระบบลงทะเบียนเรียน</span>   
-                        <span class="font-semibold text-xl">กรุณาป้อนเลขประจำตัวนิสิต/เลขประจำตัวเจ้าหน้าที่  และรหัสผ่าน</span>    
-                        <span class="font-semibold text-xl">รหัสผ่าน คือรหัสผ่านที่ใช้กับระบบอินเตอร์เน็ตของสำนักบริหารเทคโนโลยีสารสนเทศ จุฬาลงกรณ์มหาวิทยาลัย</span>
+                    <div class="flex flex-col items-center gap-2 text-center">
+                        <span class="font-extrabold text-2xl border-2 border-[#eb9999] py-3 rounded-full px-6">ประวัติการเข้าศึกษา</span>
+                        <div class="max-w-[800px] flex flex-wrap gap-5 text-[#094DD7] border-2 p-6">
+                            <div class="flex gap-3">
+                                <span class="font-semibold">วันที่รับเข้า</span>
+                                <span class="font-semibold text-[#3c1616]">5 ส.ค. 2567</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="font-semibold">ระบบการศึกษา</span>
+                                <span class="font-semibold text-[#3c1616]">ทวิภาค</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="font-semibold">ประเภทการรับเข้า</span>
+                                <span class="font-semibold text-[#3c1616]">สามัญ</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="font-semibold">โครงการรับเข้า</span>
+                                <span class="font-semibold text-[#3c1616]">XXXXXXX</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="font-semibold">ค่าธรรมเนียม</span>
+                                <span class="font-semibold text-[#3c1616]">ปกติอัตราไทย</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="font-semibold">ระดับการศึกษา</span>
+                                <span class="font-semibold text-[#3c1616]">ปริญญาตรี</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="font-semibold">หลักสูตร</span>
+                                <span class="font-semibold text-[#3c1616]">XXXXXXXX</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="font-semibold">คณะ</span>
+                                <span class="font-semibold text-[#3c1616]">XXXXXXX</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="font-semibold">ภาควิชา</span>
+                                <span class="font-semibold text-[#3c1616]">XXXXXXXXXXXXX</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="font-semibold">สาขาวิชา</span>
+                                <span class="font-semibold text-[#3c1616]">XXXXXXXXX</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="font-semibold">วิชาเอก/โท</span>
+                                <span class="font-semibold text-[#3c1616]">วิชาเอกไม่มี วิชาโทไม่มี</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex flex-col gap-5">
-                        <div class="flex justify-between items-center gap-2">
-                            <span class="text-nowrap">เลขประจำตัว</span>
-                            <input type="text" class="outline-none border p-2 px-4 rounded-full max-w-80 w-full focus:border-[#eb9999]" placeholder="Student ID (10 Letters)">
+                    <div class="flex flex-col items-center gap-2 text-center">
+                        <span class="font-extrabold text-2xl border-2 border-[#eb9999] py-3 rounded-full px-6">ระยะเวลาการศึกษา</span>
+                        <div class="max-w-[800px] flex flex-wrap gap-5 text-[#094DD7] border-2 p-6">
+                            <div class="flex gap-3">
+                                <span class="font-semibold">ระยะเวลาการศึกษา</span>
+                                <span class="font-semibold text-[#3c1616]">4 ปี (ต่ำสุด 7 ภาค สูงสุด 16 ภาค)</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="font-semibold">ระยะเวลาการศึกษาที่ใช้</span>
+                                <span class="font-semibold text-[#3c1616]">- ภาคการศึกษา - ภาคฤดูร้อน</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="font-semibold">ระยะเวลาการศึกษาที่เหลือ</span>
+                                <span class="font-semibold text-[#3c1616]">16 ภาคการศึกษา 0 ภาคฤดูร้อน</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <span class="font-semibold">หน่วยกิตต่ำสุด</span>
+                                <span class="font-semibold text-[#3c1616]">138 หน่วยกิต</span>
+                            </div>
                         </div>
-                        <div class="flex justify-between items-center gap-2">
-                            <span class="text-nowrap">รหัสผ่าน</span>
-                            <input type="password" class="outline-none border py-2 px-4 rounded-full max-w-80 w-full focus:border-[#eb9999]" placeholder="Password">
+                    </div>  
+                    <div class="flex flex-col items-center gap-2 text-center">
+                        <span class="font-extrabold text-2xl border-2 border-[#eb9999] py-3 rounded-full px-6">สถานภาพการเป็นนิสิต</span>
+                        <div class="max-w-[800px] flex flex-wrap gap-5 text-[#094DD7] border-2 p-6">
+                            <div class="flex gap-3">
+                                <span class="font-semibold">สถานภาพ</span>
+                                <span class="font-semibold text-[#3c1616]">ลงทะเบียนแรกเข้า</span>
+                            </div>
                         </div>
-                        
-                        <div class="flex flex-col items-center justify-between gap-3">
-                            <div class="flex justify-center items-center gap-4">
-                                <input type="text" class="outline-none border py-2 px-4 rounded-full w-36 focus:border-[#eb9999]">
-                                <img src="https://www2.reg.chula.ac.th/images/random/1721055911813tJLOlA8nMn_GBFeTzpiF8CR.png?0.679930770987799">
-                                <button><img src="https://www2.reg.chula.ac.th/requestDocument/sound-on.png"></button>
-                            </div>   
-                            <span class="text-center">ป้อนค่าตามภาพที่เห็น 4 หลัก ก่อนกดปุ่ม ตกลง</span>
-                        </div>
-                    </div>      
-                    <button class="border-2 border-[#eb9999] hover:bg-[#eb9999] p-2.5 rounded-full w-full max-w-[600px] hover:text-white">ตกลง</button>
+                    </div>  
                 </div>
             </div>
             <footer class="border-t-4 border-[#FCC] p-6 flex flex-col gap-2 font-medium">
